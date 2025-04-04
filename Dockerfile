@@ -50,7 +50,7 @@ RUN pip3 install -U /tmp/build/fava
 ADD requirements.txt .
 RUN pip3 install --require-hashes -U -r requirements.txt
 RUN pip3 install git+https://github.com/beancount/beanprice.git@41576e2ac889e4825e4985b6f6c56aa71de28304
-RUN pip3 install git+https://github.com/andreasgerstmayr/fava-portfolio-returns.git@de68b54f3ac517adfde3a4ccb41fdb09a0da41d1
+RUN pip3 install git+https://github.com/andreasgerstmayr/fava-portfolio-returns.git@2dd5667354f4a60d77d660d48a5c090321d16669
 
 # Install my custom modules
 RUN pip3 install git+https://github.com/patriq/beantools
